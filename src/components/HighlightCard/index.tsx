@@ -23,16 +23,22 @@ const icons ={
 
 export function HighlightCard({type,title,amount,lastTransaction}:Props){
     return(
-        <Container>
+        <Container 
+            type={type}>
             <Header>
-                <Title>
+                <Title 
+                    type={type}>
                     {title}
                 </Title>
-                <Icon name={icons[type]} type={type}/>
+                <Icon 
+                    name={icons[type]} 
+                    type={type}/>
             </Header>
             <Footer>
-                <Amount>{amount}</Amount>
-                <LastTransaction>{lastTransaction}</LastTransaction>
+                <Amount 
+                    type={type}>{amount}</Amount>
+                <LastTransaction 
+                    type={type} >{lastTransaction}</LastTransaction>
             </Footer>
         </Container>
     );
