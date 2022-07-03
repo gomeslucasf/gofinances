@@ -1,5 +1,5 @@
 import React from 'react';
-import { StatusBar,SafeAreaView } from 'react-native';
+import { StatusBar } from 'react-native';
 import { ThemeProvider } from 'styled-components';  
 import {
   useFonts,
@@ -13,6 +13,7 @@ import AppLoading from 'expo-app-loading';
 
 import theme from './src/global/theme';
 import { Dashboard } from './src/screens/Dashboard';
+import { Register } from './src/screens/Register';
 
 
 export default function App() {
@@ -28,7 +29,7 @@ export default function App() {
   return (
     <ThemeProvider theme={theme}>
       <StatusBar  barStyle={"light-content"}></StatusBar>
-      <Dashboard/>
+      <Register/>
     </ThemeProvider>
   );
 }
