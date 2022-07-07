@@ -12,4 +12,5 @@ export const Component = styled(TextInput)`
 
     margin-bottom:${RFValue(8)}px;
     border-radius: ${RFValue(5)}px;
+    
 `;

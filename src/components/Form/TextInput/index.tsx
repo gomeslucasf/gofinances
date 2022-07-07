@@ -8,6 +8,7 @@ export function TextInput ({...rest}:Props){
     return (
         <Component
         {...rest}
+        placeholderTextColor = '#969CB2'
         />
     );
 
