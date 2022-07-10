@@ -7,7 +7,7 @@ export const Component = styled(TextInput)`
     background-color: ${({theme})=> theme.colors.shape};
     padding: ${RFValue(17)}px;
     color: ${({theme})=> theme.colors.text_dark};
-    font-size: ${(RFValue(14))}px;
+    font-size: ${RFValue(14)}px;
     font-family: ${({theme})=>theme.fonts.regular};
 
     margin-bottom:${RFValue(8)}px;
